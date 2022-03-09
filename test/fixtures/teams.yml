@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team_name: MyString
+  home: MyString
+  location: MyString
+  founded: MyString
+  logo: MyString
+  introduction: MyText
+
+two:
+  team_name: MyString
+  home: MyString
+  location: MyString
+  founded: MyString
+  logo: MyString
+  introduction: MyText
