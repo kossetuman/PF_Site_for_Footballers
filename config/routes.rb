@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  
+ 
+  devise_for :users
   # views_controller
   root to: 'views#index'
   resources :views, only:[:new]

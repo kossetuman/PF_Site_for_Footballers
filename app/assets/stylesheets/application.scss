@@ -1,16 +1,125 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- @import "bootstrap";
+@import "bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//新規登録画面
+.container-bg-color {
+  background-color: #f0f2f5;
+  padding-bottom: 600px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.container-signup {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+  position: absolute;
+  top: 30px;
+  right: 475px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container-signup h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.signup-text {
+  text-align: center;
+  color: #606770;
+  border-bottom: 1px solid #f0f2f5;
+  padding-bottom: 10px;
+}
+
+//ログイン画面
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  right: 475px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.container-login h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.login-text {
+  text-align: center;
+  color: #606770;
+  border-bottom: 1px solid #f0f2f5;
+  padding-bottom: 10px;
+}
+
+
+// 「ログインしました」などのフラッシュ用スタイル
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
+
+//headerのcss
+
+
+.header-top-line {
+  width: 100%;
+  height: 30px;
+  background-color: #73cad0;
+}
+
+.header-middle {
+  padding-bottom: 5px;
+}
+
+.header-bottom-line {
+  width: 100%;
+  height: 30px;
+  background-color: #1a1a1a;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-nav li  {
+  list-style: none;
+  line-height: 30px;
+}
+
+.header-nav li a {
+  text-decoration: none;
+}
+
+.nav-color {
+  color: white;
+}
+
+@media screen and (min-width:480px) { 
+    /*　for iPhone Landscape　(iPhone 横)　*/
+ 
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /*　for iPad 　*/
+ 
+}
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+ 
+}
